@@ -6,6 +6,7 @@ import SearchBox from '../components/SearchBox';
 import './App.css';
 import { robots } from "../robots";
 import Scroll from '../components/Scroll'
+import ErrorBoundry from "../components/ErrorBoundry";
 
 // STATE>>PROPS state means an object that describes our application
 // const state={
@@ -49,7 +50,9 @@ class App extends Component{
              <h1 className="f2">Robo Friends</h1>
              <SearchBox searchChange={this.onSearchChange}/>
        <Scroll>
-       <Cardlist robots={filteredRobots}/>
+           <ErrorBoundry>
+           <Cardlist robots={filteredRobots}/>
+           </ErrorBoundry>   
        </Scroll>
         </div>
      );
