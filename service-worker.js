@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/rishav-rauniyar17/robotics.git/precache-manifest.488a41cb13b9b3ce5d817e995cfee255.js"
+  "/robotics/precache-manifest.a303764b1ccbc1e2afa7ddcf01c2e7f3.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/rishav-rauniyar17/robotics.git/index.html", {
+workbox.routing.registerNavigationRoute("/robotics/index.html", {
   
   blacklist: [/^\/_/,/\/[^/]+\.[^/]+$/],
 });
